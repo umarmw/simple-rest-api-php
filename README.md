@@ -6,7 +6,8 @@ https://www.codeofaninja.com/2017/02/create-simple-rest-api-in-php.html
 
 # Database & tables
 
-.1 Create categories table
+1.1 Create categories table
+
 ```CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(256) NOT NULL,
@@ -16,7 +17,7 @@ https://www.codeofaninja.com/2017/02/create-simple-rest-api-in-php.html
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;```
 
-3.2 Dump data for categories table
+1.2 Dump data for categories table
 
 ```INSERT INTO `categories` (`id`, `name`, `description`, `created`, `modified`) VALUES
 (1, 'Fashion', 'Category for anything related to fashion.', '2014-06-01 00:35:07', '2014-05-30 17:34:33'),
@@ -26,7 +27,7 @@ https://www.codeofaninja.com/2017/02/create-simple-rest-api-in-php.html
 (6, 'Books', 'Kindle books, audio books and more.', '0000-00-00 00:00:00', '2016-01-08 13:27:47'),
 (13, 'Sports', 'Drop into new winter gear.', '2016-01-09 02:24:24', '2016-01-09 01:24:24');```
 
-3.3 Products table
+1.3 Products table
 
 ```CREATE TABLE IF NOT EXISTS `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -39,7 +40,7 @@ https://www.codeofaninja.com/2017/02/create-simple-rest-api-in-php.html
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=65 ;```
 
-3.4 Dump data for products table
+1.4 Dump data for products table
 
 ```INSERT INTO `products` (`id`, `name`, `description`, `price`, `category_id`, `created`, `modified`) VALUES
 (1, 'LG P880 4X HD', 'My first awesome phone!', '336', 3, '2014-06-01 01:12:26', '2014-05-31 17:12:26'),
